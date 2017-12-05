@@ -100,6 +100,11 @@ gulp.task('copy', function() {
 
   gulp.src(['node_modules/simple-line-icons/**/*', '!node_modules/simple-line-icons/*.json', '!node_modules/simple-line-icons/*.md'])
     .pipe(gulp.dest('vendor/simple-line-icons'))
+
+  gulp.src([
+      'node_modules/swiper/dist/**/*'
+    ])
+    .pipe(gulp.dest('vendor/swiper'))
 })
 
 // Default task

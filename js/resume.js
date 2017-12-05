@@ -18,11 +18,18 @@
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
+    $('.hamburger').toggleClass("is-active");
+    $('body').toggleClass("menu-active");
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#sideNav'
+  });
+
+  $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+    $('body').toggleClass("menu-active");
   });
 
 })(jQuery); // End of use strict
