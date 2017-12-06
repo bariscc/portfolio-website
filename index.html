@@ -49,7 +49,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">bariscc.me</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-3" src="img/profile.jpg" alt="">
         </span>
       </a>
       <button class="navbar-toggler hamburger" id="hamburger-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded=""fa"lse" aria-label="Toggle navigation">
@@ -231,7 +231,7 @@
                 <input type="text" class="effect-1" name="value" id="value" required>
                 <span class="focus-border"></span>
               </div>
-              <button type="submit" id="form-submit" class="btn btn btn-link"><i class="fa fa-paper-plane fa-fw text-primary"></i></button>
+              <button type="submit" id="form-submit" class="btn btn btn-link text-primary"><i class="fa fa-paper-plane fa-fw"></i></button>
             </div>
           </form>
         </div>
@@ -263,7 +263,7 @@
             data: "value=" + value,
             dataType: "json",
             beforeSend: function() {
-              $('#form-submit').html('<i class="fa fa-circle-o-notch fa-spin fa-fw text-primary"></i>').prop('disabled',true);
+              $('#form-submit').html('<i class="fa fa-circle-o-notch fa-spin fa-fw"></i>').prop('disabled',true);
             },
             success: function (res){
               if(res.status == 1) {
@@ -278,7 +278,7 @@
               console.log('fail');
             },
             complete: function() {
-              $('#form-submit').html('<i class="fa fa-paper-plane fa-fw text-primary"></i>').prop('disabled',false);
+              $('#form-submit').html('<i class="fa fa-paper-plane fa-fw"></i>').prop('disabled',false);
             }
         });
     }

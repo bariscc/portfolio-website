@@ -86,6 +86,9 @@ h2 {
   #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 600;
     text-transform: uppercase; }
+  #sideNav .navbar-toggler {
+    border-color: transparent;
+    outline: none !important; }
 
 @media (min-width: 992px) {
   #sideNav {
@@ -102,9 +105,9 @@ h2 {
       margin: auto auto 0;
       padding: 0.5rem; }
       #sideNav .navbar-brand .img-profile {
-        max-width: 10rem;
-        max-height: 10rem;
-        border: 0.5rem solid rgba(255, 255, 255, 0.2); }
+        max-width: 7rem;
+        max-height: 7rem;
+        border: 0.4rem solid rgba(255, 255, 255, 0.2); }
     #sideNav .navbar-collapse {
       display: flex;
       align-items: flex-start;
@@ -183,13 +186,27 @@ section.resume-section {
 .bg-primary {
   background-color: #800000 !important; }
 
+a.text-primary, button.text-primary {
+  color: #800000 !important; }
+  a.text-primary:hover, a.text-primary:focus, a.text-primary:active, button.text-primary:hover, button.text-primary:focus, button.text-primary:active {
+    color: #340000 !important; }
+
 .text-primary {
   color: #800000 !important; }
+
+button:hover {
+  cursor: pointer; }
 
 a {
   color: #800000; }
   a:hover, a:focus, a:active {
     color: #340000; }
+
+a, .list-icons i, .btn-link {
+  transition: color .3s !important; }
+
+body {
+  background-color: #F6F4E7; }
 
 .img-responsive {
   max-width: 100%;
@@ -210,6 +227,7 @@ a {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 section {
+  background-color: #F6F4E7;
   background: url("../img/bg2.png"); }
 
 :focus {

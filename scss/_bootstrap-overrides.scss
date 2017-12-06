@@ -2,8 +2,20 @@
   background-color: $primary !important;
 }
 
+a.text-primary, button.text-primary {
+  color: $primary !important;
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($primary, 15%) !important;
+  }
+}
 .text-primary {
   color: $primary !important;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 a {
@@ -13,4 +25,12 @@ a {
   &:active {
     color: darken($primary, 15%);
   }
+}
+
+a, .list-icons i, .btn-link {  
+  transition: color .3s !important;
+}
+
+body {
+  background-color: #F6F4E7;
 }
