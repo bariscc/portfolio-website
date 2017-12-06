@@ -35,3 +35,40 @@
 section {  
   background: url('../img/bg2.png');
 }
+
+:focus{outline: none;}
+.effect-1{
+  border: 0; 
+  padding: 7px 0; 
+  border-bottom: 1px solid #ccc;
+  background:transparent;
+  width: 50px;
+  text-align: center;
+}
+.effect-1 ~ .focus-border {
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  width: 0; 
+  height: 2px; 
+  background-color: maroon; transition: 0.4s;
+}
+.effect-1:focus ~ .focus-border{width: 100%; transition: 0.4s; left: 0;}
+
+#cobb {
+  position: absolute;
+  left: 0;
+  transform: translateX(-200%);
+  top: -157px;
+  width: 100px;
+  -webkit-transition: -webkit-transform 1s;
+     -moz-transition: -moz-transform 1s;
+          transition: transform 1s;
+  &.show {
+    transform: translateX(155%);
+  }
+}
+
+.input-wrapper, #result-wrapper {
+  position: relative;
+}
