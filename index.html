@@ -136,48 +136,52 @@
           <h2 class="mb-5">Projects</h2>
 
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-3">
               <a target="_blank" href="http://exto.bariscc.me" class="tab">
                 <img class="img-responsive center-block" src="img/jobs/exto-logo-lg.png">
               </a>
-              <div class="subheading mt-2">EXTO HOME</div>
+              <div class="subheading mt-2">exto</div>
               <p>Smart home automation project</p>
             </div>
-            <div class="col-sm-4">
-              <a target="_blank" href="http://sorubankasi.bariscc.me" class="tab">
-                <img class="img-responsive center-block" src="img/jobs/sb-logo-lg.png">
+            <div class="col-sm-3">
+              <a target="_blank" href="http://extohome.bariscc.me/ionic-lab" class="tab mobile-link">
+                <img class="img-responsive center-block" src="img/jobs/exto-home.png">
               </a>
-              <div class="subheading mt-2">SORUBANKASI</div>
-              <p>Interactive test solving platform for students and teachers</p>
+              <div class="subheading mt-2">exto Home</div>
+              <p>exto mobile app (multi platform)</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <a target="_blank" href="http://altsozluk.com" class="tab">
                   <img class="img-responsive center-block" src="img/jobs/alt-logo.png">
                 </a>
               <div class="subheading mt-2">ALTSOZLUK</div>
               <p>Community driven subculture dictionary</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
+              <a target="_blank" href="http://sorubankasi.bariscc.me" class="tab">
+                <img class="img-responsive center-block" src="img/jobs/sb-logo-lg.png">
+              </a>
+              <div class="subheading mt-2">SORUBANKASI</div>
+              <p>Interactive test solving platform for students and teachers</p>
+            </div>
+            <!-- <div class="col-sm-4">
               <a target="_blank" href="http://projecozum.com/en.html" class="tab">
                 <img class="img-responsive center-block" src="img/jobs/projecozum.png">
               </a>
-              <!-- <div class="subheading mt-2">PROJECOZUM</div> -->
               <p class="mt-2">projecozum.com</p>
             </div>
             <div class="col-sm-4">
               <a target="_blank" href="http://siberenerji.net" class="tab">
                 <img class="img-responsive center-block" src="img/jobs/siberenerji.png">
               </a>
-              <!-- <div class="subheading mt-2">Siber Elekromekanik</div> -->
               <p class="mt-2">siberenerji.net</p>
             </div>
             <div class="col-sm-4">
               <a target="_blank" href="http://ozgurkitabevi.com" class="tab">
                 <img class="img-responsive center-block" src="img/jobs/ozgurkitabevi.png">
               </a>
-              <!-- <div class="subheading mt-2">Özgür Kitabevi</div> -->
               <p class="mt-2">ozgurkitabevi.com</p>
-            </div>
+            </div> -->
             
           </div>
 
@@ -303,6 +307,11 @@
             }
         });
     }
+    $(function() {
+      if (/Mobi/.test(navigator.userAgent)) {
+          $('.mobile-link').attr('href', 'http://extohome.bariscc.me');
+      }
+    });
     </script>
 
   </body>
