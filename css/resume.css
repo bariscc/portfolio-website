@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 body {
@@ -222,9 +222,16 @@ body {
   .tab + .tab {
     margin-top: 5px; }
   .tab img {
-    border-radius: 2px; }
+    border-radius: 2px;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%); }
   .tab:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    .tab:hover img {
+      -webkit-filter: none;
+      /* Safari 6.0 - 9.0 */
+      filter: none; }
 
 section {
   background-color: #F6F4E7;

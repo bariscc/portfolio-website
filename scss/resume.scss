@@ -26,9 +26,15 @@
     }
     img {
       border-radius: 2px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
     }
     &:hover {
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      img {
+        -webkit-filter: none; /* Safari 6.0 - 9.0 */
+        filter:  none;
+      }
     }
 }
 
